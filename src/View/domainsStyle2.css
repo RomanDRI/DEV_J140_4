@@ -1,0 +1,22 @@
+.table-view .table-column{
+    -fx-background-color: LightSteelBlue;
+    -fx-text-fill: PapayaWhip;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: PapayaWhip;
+    -fx-background-color: Gray;
+}
+
+.root {
+    -fx-background-color: DimGray;
+}
+
+.button {
+    -fx-background-color: SeaShell;
+    -fx-text-fill: DimGray;
+     -fx-font-family: sans-serif;
+}
+.button:hover {
+    -fx-background-color: PapayaWhip;
+}
