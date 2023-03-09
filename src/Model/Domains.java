@@ -15,7 +15,6 @@ public class Domains {
     private Integer personId;
     private Set<Person> person = new HashSet<>();
 
-
     public Domains(Integer id, String webName, String domainName, String ip, Timestamp dateReg, String countryReg, Integer personId) {
         this.id = id;
         this.webName = webName;

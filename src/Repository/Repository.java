@@ -6,6 +6,7 @@ import Model.Users;
 
 import java.sql.*;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class Repository {
@@ -57,7 +58,7 @@ public class Repository {
                         }
                     }
                     {
-                      if (resultSet.getString(7)!=null) {
+                        if (resultSet.getString(7)!=null) {
                             Integer id = resultSet.getInt(6);
                             String webName = resultSet.getString(7);
                             String domainName = resultSet.getString(8);
@@ -67,16 +68,14 @@ public class Repository {
                             Integer personId = resultSet.getInt(12);
                             Domains domains = new Domains(id,webName,domainName,ip,dateReg,countryReg,personId);
                             person.addDomains(domains);
-                    }
+                        }
                     }
                 }
             }
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
         return persons;
-
     }
 
     public Set<Domains> findDomains(Integer idPerson){

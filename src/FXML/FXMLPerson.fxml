@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800" prefWidth="915" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLPersonController" >
+    <children>
+        <TableView fx:id="personTable" onMouseClicked="#handlerDoubleClicked" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="jobTitleColumn" text="Должность" prefWidth="200"/>
+                <TableColumn fx:id="firstNameLastNameColumn" text="ФИО" prefWidth="200"/>
+                <TableColumn fx:id="phoneColumn" text="Телефон" prefWidth="150"/>
+                <TableColumn fx:id="emailColumn" text="Эл. почта" prefWidth="200"/>
+                <TableColumn fx:id="countColumn" text="Кол-во доменов" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
