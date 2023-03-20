@@ -1,0 +1,40 @@
+
+
+.root {
+    -fx-background-color: Gainsboro;
+}
+
+.text-field {
+    -fx-color: Gray;
+    -fx-background-color: WhiteSmoke;
+    -fx-text-fill: BurlyWood;
+    -fx-font-family: Serif;
+}
+.text-field:focused {
+    -fx-background-color: Linen;
+}
+
+
+.label {
+    -fx-text-fill: DimGray;
+    -fx-font-size: 11pt;
+    -fx-font-family: Serif;
+}
+
+.button{
+    -fx-background-color: WhiteSmoke;
+    -fx-text-fill: DimGray;
+    -fx-font-family: Serif;
+}
+.button:hover {
+    -fx-background-color: Linen;
+}
+.table-view .table-column{
+    -fx-background-color: Gainsboro;
+    -fx-text-fill: DimGray;
+    -fx-font-family: Serif;
+}
+.column-header-background{
+    -fx-text-fill: DimGray;
+    -fx-font-family: Serif;
+}

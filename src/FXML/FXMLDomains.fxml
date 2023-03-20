@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controller.FXMLDomainsController" prefHeight="200.0" prefWidth="795.0">
+    <children>
+        <TableView fx:id="domainsTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="webNameColumn" text="Имя" prefWidth="150"/>
+                <TableColumn fx:id="domainNameColumn" text="Имя домена" prefWidth="150"/>
+                <TableColumn fx:id="ipColumn" text="IP" prefWidth="100"/>
+                <TableColumn fx:id="dateRegColumn" text="Дата регистрации" prefWidth="150"/>
+                <TableColumn fx:id="countryRegColumn" text="Страна регистрации" prefWidth="100"/>
+                <TableColumn fx:id="personIdColumn" text="ID владельца" prefWidth="100"/>
+            </columns>
+        </TableView>
+            <Button fx:id="changeStyle" text="Change style" layoutX="360" layoutY="160" onAction="#handleButtonActionChangeStyle"/>
+    </children>
+</AnchorPane>

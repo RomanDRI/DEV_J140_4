@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLAuthenticationController" prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label fx:id="welcomeLabel" text="Welcome" layoutX="150" layoutY="50" style="-fx-font-size:18px"/>
+        <Label fx:id="userField" text="User Name:" layoutX="80" layoutY="93"/>
+        <Label fx:id="passwordField" text="Password:" layoutX="88" layoutY="123"/>
+        <TextField fx:id="userText" layoutX="150" layoutY="90"/>
+        <PasswordField fx:id="passwordText" layoutX="150" layoutY="120"/>
+        <Button fx:id="singIn" text="Sign in" layoutX="245" layoutY="160" onAction="#handleButtonActionSingIn"/>
+        <Label fx:id="massage" layoutX="150" layoutY="200"/>
+    </children>
+</AnchorPane>
